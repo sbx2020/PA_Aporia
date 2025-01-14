@@ -1,59 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aporia</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
-        <h1 id="header-text">Aporia</h1>
+        <div id="header-text">Aporia</div>
     </header>
     <main>
-        <section id="project-form">
-            <div class="project-inputs">
-                <label for="project-name">Project Name:</label>
-                <textarea id="project-name" placeholder="Enter project name"></textarea>
-
-                <label for="main-goal">Main Goal:</label>
-                <textarea id="main-goal" placeholder="Enter main goal"></textarea>
+        <div class="left-panel">
+            <div class="input-group">
+                <label>Project Name:</label>
+                <input type="text" id="project-name">
             </div>
-
-            <div class="subgoals-section">
-                <div id="subgoalGrid" class="subgoal-grid"></div>
-                <textarea id="subgoal-input" placeholder="Enter subgoal description"></textarea>
+            <div class="input-group">
+                <label>Main Goal:</label>
+                <input type="text" id="main-goal">
+            </div>
+            <div class="input-group">
+                <label>Subgoal:</label>
+                <input type="text" id="subgoal-input" placeholder="Enter subgoal...">
+            </div>
+            
+            <div id="subgoalGrid"></div>
+            
+            <div class="button-row">
+                <button id="new-project">New Project</button>
                 <button id="add-subgoal">Add Subgoal</button>
                 <button id="save-project">Save Project</button>
                 <select id="project-select">
-                    <option value="">Select Project</option>
+                    <option value="">Select a project...</option>
                 </select>
                 <button id="load-project">Load Project</button>
                 <button id="delete-project">Delete Project</button>
             </div>
 
-            <div id="activeSubgoal">
-                <textarea id="activeSubgoalDescription" placeholder="Enter subgoal description"></textarea>
+            <div class="timer-section">
+                <div class="timer-display">00:00</div>
                 <div class="timer-controls">
-                    <button id="activeTimerStart">Start</button>
-                    <button id="activeTimerStop">Stop</button>
-                    <button id="activeTimerReset">Reset</button>
+                    <button id="start-timer">Start Timer</button>
+                    <button id="stop-timer">Stop Timer</button>
+                    <button id="reset-timer">Reset Timer</button>
                 </div>
-                <span id="activeTimerDisplay">00:00:00</span>
-                <button id="activeSubgoalComplete">Complete</button>
-                <button id="activeSubgoalRemove">X</button>
             </div>
-        </section>
+        </div>
 
-        <section id="ai-assistant" class="chat-window">
-            <div class="chat-area">
-                <div class="chat-container">
-                    <div id="chat-messages" class="chat-messages" role="log" aria-live="polite"></div>
-                    <div class="chat-input-container">
-                        <textarea id="chat-input" placeholder="Type your message..." aria-label="Chat message input"></textarea>
-                        <button id="send-message" aria-label="Send message">Send</button>
-                    </div>
+        <div class="right-panel">
+            <div class="ai-section">
+                <div class="model-selection">
+                    <label>Select AI Model:</label>
+                    <select id="ai-model"></select>
+                </div>
+                <div class="chat-messages"></div>
+                <div class="chat-input">
+                    <textarea id="user-input" placeholder="Ask for project management advice..."></textarea>
+                    <button id="send-message">Send</button>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
