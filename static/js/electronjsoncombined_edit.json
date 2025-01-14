@@ -1,0 +1,5373 @@
+
+
+{
+  "last_updated": "2025-01-04 20:11:04",
+  "daily_credit_limit": 1500000,
+  "models": [
+    {
+      "name": "claude-3-opus-20240229",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 6000000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 30
+        }
+      },
+      "tokens": 200000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "o1",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 6000000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 30
+        }
+      },
+      "tokens": 200000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gemini-2.0-flash-thinking-exp",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 120000,
+        "max_daily_uses": 12,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 3
+        }
+      },
+      "tokens": 40000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gemini-2.0-flash-thinking-exp-1219",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 120000,
+        "max_daily_uses": 12,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 3
+        }
+      },
+      "tokens": 40000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "midjourney-v6.1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 40000,
+        "max_daily_uses": 37,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 40000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "niji-v6",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 40000,
+        "max_daily_uses": 37,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 40000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "midjourney-v6",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 30000,
+        "max_daily_uses": 50,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 30000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "midjourney-v5.2",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 30000,
+        "max_daily_uses": 50,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 30000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "midjourney-v5.1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 30000,
+        "max_daily_uses": 50,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 30000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "midjourney-v5",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 30000,
+        "max_daily_uses": 50,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 30000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "midjourney-v4",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 30000,
+        "max_daily_uses": 50,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 30000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "niji-v5",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 30000,
+        "max_daily_uses": 50,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 30000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "niji-v4",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 30000,
+        "max_daily_uses": 50,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 30000
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "gpt-4",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 160000,
+        "max_daily_uses": 9,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 20
+        }
+      },
+      "tokens": 8000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "o1-preview",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 2560000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 20
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "grok-2-1212",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 982500,
+        "max_daily_uses": 1,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 7.5
+        }
+      },
+      "tokens": 131000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "grok-2-vision-1212",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 240000,
+        "max_daily_uses": 6,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 7.5
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "luma-photon",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 8000,
+        "max_daily_uses": 187,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 8000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "recraft-v3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 8000,
+        "max_daily_uses": 187,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 8000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "ideogram-v2",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 8000,
+        "max_daily_uses": 187,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 8000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "omni-gen",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 8000,
+        "max_daily_uses": 187,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 8000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "aura-flow",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 8000,
+        "max_daily_uses": 187,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 8000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "gpt-4-turbo",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 1280000,
+        "max_daily_uses": 1,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 10
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gpt-4-turbo-preview",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 1280000,
+        "max_daily_uses": 1,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 10
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gpt-4-0125-preview",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 1280000,
+        "max_daily_uses": 1,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 10
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gpt-4-1106-preview",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 1280000,
+        "max_daily_uses": 1,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 10
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "inflection-3-pi",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 20000,
+        "max_daily_uses": 75,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 2.5
+        }
+      },
+      "tokens": 8000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "inflection-3-productivity",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 20000,
+        "max_daily_uses": 75,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 2.5
+        }
+      },
+      "tokens": 8000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "grok-2",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 327500,
+        "max_daily_uses": 4,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 2.5
+        }
+      },
+      "tokens": 131000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "grok-beta",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 327500,
+        "max_daily_uses": 4,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 2.5
+        }
+      },
+      "tokens": 131000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gemini-2.0-flash-exp",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 3000000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 3
+        }
+      },
+      "tokens": 1000000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gemini-exp-1206",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 6000000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 3
+        }
+      },
+      "tokens": 2000000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "luma-photon-flash",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 6000,
+        "max_daily_uses": 250,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 6000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "imagen-3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 6000,
+        "max_daily_uses": 250,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 6000
+        }
+      },
+      "tokens": 500,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "ideogram-v2-turbo",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 6000,
+        "max_daily_uses": 250,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 6000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "flux-1.1-pro-ultra",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 10000,
+        "max_daily_uses": 150,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 10000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "flux-cinestill",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 7000,
+        "max_daily_uses": 214,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 7000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "flux-black-light",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 7000,
+        "max_daily_uses": 214,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 7000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "flux-1.1-pro",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 7000,
+        "max_daily_uses": 214,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 7000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "nova-canvas",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 7000,
+        "max_daily_uses": 214,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 7000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "recraft-v3-svg",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 7000,
+        "max_daily_uses": 214,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 7000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "stable-diffusion-3.5-large",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 5000,
+        "max_daily_uses": 300,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 5000
+        }
+      },
+      "tokens": 500,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "recraft-20b",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 5000,
+        "max_daily_uses": 300,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 5000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "flux-pro",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 5000,
+        "max_daily_uses": 300,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 5000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "amazon-titan-v2",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 5000,
+        "max_daily_uses": 300,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 5000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "gemini-1.5-pro",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 5000000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 2.5
+        }
+      },
+      "tokens": 2000000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gemini-1.5-pro-latest",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 5000000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 2.5
+        }
+      },
+      "tokens": 2000000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "gemini-1.5-pro-exp",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 5000000,
+        "max_daily_uses": 0,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 2.5
+        }
+      },
+      "tokens": 2000000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "imagen-3-fast",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 4000,
+        "max_daily_uses": 375,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 4000
+        }
+      },
+      "tokens": 500,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "recraft-20b-svg",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 4000,
+        "max_daily_uses": 375,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 4000
+        }
+      },
+      "tokens": 1000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "stable-diffusion-3.5-turbo",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 3000,
+        "max_daily_uses": 500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 3000
+        }
+      },
+      "tokens": 500,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "dall-e-3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 3000,
+        "max_daily_uses": 500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 3000
+        }
+      },
+      "tokens": 200,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "flux-realism",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 3000,
+        "max_daily_uses": 500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 3000
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+        "name": "amazon-titan",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 3000,
+          "max_daily_uses": 500,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 3000
+          }
+        },
+        "tokens": 1000,
+        "endpoints": [
+          "/v1/images/generations"
+        ]
+      },
+      {
+        "name": "sana",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 3000,
+          "max_daily_uses": 500,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 3000
+          }
+        },
+        "tokens": 1000,
+        "endpoints": [
+          "/v1/images/generations"
+        ]
+      },
+      {
+        "name": "imagen",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 2000,
+          "max_daily_uses": 750,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 2000
+          }
+        },
+        "tokens": 500,
+        "endpoints": [
+          "/v1/images/generations"
+        ]
+      },
+      {
+        "name": "flux-dev",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 2000,
+          "max_daily_uses": 750,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 2000
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/images/generations"
+        ]
+      },
+      {
+        "name": "grok-vision-beta",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 40000,
+          "max_daily_uses": 37,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 8000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "gpt-4o",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 640000,
+          "max_daily_uses": 2,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "gpt-4o-2024-05-13",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 640000,
+          "max_daily_uses": 2,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "gpt-4o-2024-08-06",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 640000,
+          "max_daily_uses": 2,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "gpt-4o-2024-11-20",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 640000,
+          "max_daily_uses": 2,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "chatgpt-4o-latest",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 640000,
+          "max_daily_uses": 2,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "claude-3-sonnet-20240229",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 1000000,
+          "max_daily_uses": 1,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 200000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "claude-3-5-sonnet-20240620",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 1000000,
+          "max_daily_uses": 1,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 200000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "claude-3-5-sonnet-20241022",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 1000000,
+          "max_daily_uses": 1,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 5
+          }
+        },
+        "tokens": 200000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "f1-preview",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 256000,
+          "max_daily_uses": 5,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "llama-3.1-405b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 256000,
+          "max_daily_uses": 5,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "llama-3.3-70b-instruct",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 256000,
+          "max_daily_uses": 5,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "pixtral-large-2411",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 256000,
+          "max_daily_uses": 5,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "mistral-large-latest",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 256000,
+          "max_daily_uses": 5,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "mistral-large-2411",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 256000,
+          "max_daily_uses": 5,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "jamba-1.5-large",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 512000,
+          "max_daily_uses": 2,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 256000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "eva-qwen2.5-72b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 64000,
+          "max_daily_uses": 23,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "sorcererlm-8x22b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 32000,
+          "max_daily_uses": 46,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 16000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "gemini-exp-1121",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 80000,
+          "max_daily_uses": 18,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 40000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "nova-pro-v1",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 600000,
+          "max_daily_uses": 2,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 2
+          }
+        },
+        "tokens": 300000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "mistral-large-2407",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 224000,
+          "max_daily_uses": 6,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "mistral-nemo",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "deepseek-v3",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 224000,
+          "max_daily_uses": 6,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "grok-2-mini",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 229250,
+          "max_daily_uses": 6,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 131000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "gemini-exp-1114",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 70000,
+          "max_daily_uses": 21,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 40000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "learnlm-1.5-pro-experimental",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 70000,
+          "max_daily_uses": 21,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 40000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "claude-3-5-haiku-20241022",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 350000,
+          "max_daily_uses": 4,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 200000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "command-r-plus",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 224000,
+          "max_daily_uses": 6,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "command-r-plus-04-2024",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 224000,
+          "max_daily_uses": 6,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "command-r-plus-08-2024",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 224000,
+          "max_daily_uses": 6,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "qvq-72b-preview",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 224000,
+          "max_daily_uses": 6,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.75
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "moonshot-v1-128k",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "command-nightly",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "command-r",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "command-r-03-2024",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "command-r-08-2024",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "c4ai-aya-expanse-32b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "llama-3.1-sonar-huge-128k-online",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "f1-mini-preview",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "dbrx-instruct",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 48000,
+          "max_daily_uses": 31,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "mistral-medium",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 48000,
+          "max_daily_uses": 31,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "reka-core",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 12000,
+          "max_daily_uses": 125,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 8000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "llama-3.1-nemotron-70b-instruct",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 196500,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 131000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "ministral-8b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 192000,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 128000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "nova-lite-v1",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 450000,
+          "max_daily_uses": 3,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 300000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "qwen-2.5-coder-32b-instruct",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 49500,
+          "max_daily_uses": 30,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 33000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "qwq-32b-preview",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 48000,
+          "max_daily_uses": 31,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "mistral-nemo-inferor-12b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 48000,
+          "max_daily_uses": 31,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "eva-llama-3.33-70b-v0.0",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 24000,
+          "max_daily_uses": 62,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 16000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "eva-llama-3.33-70b-v0.1",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 24000,
+          "max_daily_uses": 62,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 16000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "llama-3.1-lumimaid-70b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 24000,
+          "max_daily_uses": 62,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 16000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "llama-3-lumimaid-70b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 12000,
+          "max_daily_uses": 125,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 8000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "llama3-openbiollm-70b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 196500,
+          "max_daily_uses": 7,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 131000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "magnum-v4-72b",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 48000,
+          "max_daily_uses": 31,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 1.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "athene-70b",
+        "type": "chat",
+        "cost_analysis":    {
+            "cost_per_use": 12000,
+            "max_daily_uses": 125,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+	   {
+          "name": "llama-3.1-8b-lexi-uncensored-v2",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 24000,
+            "max_daily_uses": 62,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/nsfw/chat/completions",
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "l3.3-70b-euryale-v2.3",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 24000,
+            "max_daily_uses": 62,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/nsfw/chat/completions",
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "l3.3-ms-evayale-70b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 24000,
+            "max_daily_uses": 62,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/nsfw/chat/completions",
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "l31-70b-euryale-v2.2",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 12000,
+            "max_daily_uses": 125,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/nsfw/chat/completions",
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "flux-1.1-pro-ultra-raw",
+          "type": "image",
+          "cost_analysis": {
+            "cost_per_use": 15000,
+            "max_daily_uses": 100,
+            "calculation_method": "per_request",
+            "original_pricing": {
+              "type": "per_request",
+              "credits": 15000
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/images/generations"
+          ]
+        },
+        {
+          "name": "gpt-4o-mini",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 192000,
+            "max_daily_uses": 7,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemini-1.5-flash-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 1250000,
+            "max_daily_uses": 1,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 1000000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemini-1.5-flash",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 1250000,
+            "max_daily_uses": 1,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 1000000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemini-1.5-flash-latest",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 1250000,
+            "max_daily_uses": 1,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 1000000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemini-1.5-flash-exp",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 1250000,
+            "max_daily_uses": 1,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 1000000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemini-1.5-flash-online",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 5000,
+            "max_daily_uses": 300,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 10000,
+            "max_daily_uses": 150,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "palm-2-chat-bison",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 11250,
+            "max_daily_uses": 133,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 9000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "palm-2-codechat-bison",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8750,
+            "max_daily_uses": 171,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 7000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "palm-2-chat-bison-32k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "palm-2-codechat-bison-32k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "code-llama-34b-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 20000,
+            "max_daily_uses": 75,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3-70b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 10000,
+            "max_daily_uses": 150,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.1-70b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.2-11b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.2-90b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "deepseek-coder",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "deepseek-v2.5",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "deepseek-llm-67b-chat",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "dolphin-mixtral-8x22b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 80000,
+            "max_daily_uses": 18,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 64000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "command-light",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 5000,
+            "max_daily_uses": 300,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "command-light-nightly",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 5000,
+            "max_daily_uses": 300,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "c4ai-aya-expanse-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 10000,
+            "max_daily_uses": 150,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.1-sonar-large-128k-online",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "phi-3-vision-128k-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "wizardlm-2-8x22b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 80000,
+            "max_daily_uses": 18,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 64000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "jamba-1.5-mini",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 384000,
+            "max_daily_uses": 3,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.5
+            }
+          },
+          "tokens": 256000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "nova-micro-v1",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "doubao-lite-128k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "doubao-pro-32k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "doubao-pro-128k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "ernie-speed-128k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "glm-4-long",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 1250000,
+            "max_daily_uses": 1,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 1000000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "glm-4-air",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 160000,
+            "max_daily_uses": 9,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "yi-vl-plus",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "yi-large",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 20000,
+            "max_daily_uses": 75,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "yi-large-turbo",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 20000,
+            "max_daily_uses": 75,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "yi-large-rag",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 20000,
+            "max_daily_uses": 75,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "moonshot-v1-32k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "unslopnemo-12b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "openhermes-2.5-mistral-7b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 5000,
+            "max_daily_uses": 300,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "l3-lunaris-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 10000,
+            "max_daily_uses": 150,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.1-lumimaid-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3-lumimaid-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 30000,
+            "max_daily_uses": 50,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 24000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "l3.1-70b-hanami-x1",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 20000,
+            "max_daily_uses": 75,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "magnum-v2-72b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 20000,
+            "max_daily_uses": 75,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "magnum-72b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 20000,
+            "max_daily_uses": 75,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "mini-magnum-12b-v1.1",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 40000,
+            "max_daily_uses": 37,        "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "remm-slerp-l2-13b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 7500,
+            "max_daily_uses": 200,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 6000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "midnight-rose-70b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 5000,
+            "max_daily_uses": 300,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "lzlv_70b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 5000,
+            "max_daily_uses": 300,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/nsfw/chat/completions",
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "airoboros-l2-70b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 5000,
+            "max_daily_uses": 300,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/nsfw/chat/completions",
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gpt-3.5-turbo",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gpt-3.5-turbo-16k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 16000,
+            "max_daily_uses": 93,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gpt-3.5-turbo-1106",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gpt-3.5-turbo-0125",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemini-1.0-pro",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemma-7b-it",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-guard-3-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.1-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.2-3b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "mixtral-8x22b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "mistral-tiny",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "mistral-small",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "dolphin-mixtral-8x7b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "command",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "reka-flash",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.1-sonar-small-128k-online",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "llama-3.1-sonar-large-128k-chat",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "phi-3.5-mini-128k-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "phi-3-medium-128k-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "wizardlm-2-7b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "openchat-3.5-7b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "openchat-3.6-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "qwen-2-72b-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "qwen-2-vl-72b-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 131000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 131000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "glm-3-130b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "glm-4-flash",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "glm-4-airx",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "glm-4-plus",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "glm-4-alltools",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 128000,
+            "max_daily_uses": 11,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 128000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "yi-medium",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 16000,
+            "max_daily_uses": 93,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 16000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "yi-34b-chat-200k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 200000,
+            "max_daily_uses": 7,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 200000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "moonshot-v1-8k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "mytho-max-l2-13b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "nous-hermes-llama2-13b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "hermes-3-llama-3.1-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 0.75
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "hermes-2-pro-llama-3-8b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "nous-hermes-2-mixtral-8x7b-dpo",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "doubao-lite-4k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "doubao-lite-32k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "doubao-pro-4k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "ernie-lite-8k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "ernie-tiny-8k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "ernie-speed-8k",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 8000,
+            "max_daily_uses": 187,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 8000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "hunyuan-lite",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 256000,
+            "max_daily_uses": 5,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1.25
+            }
+          },
+          "tokens": 256000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "rocinante-12b-v1.1",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "rocinante-12b-v1",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "lfm-40b",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 32000,
+            "max_daily_uses": 46,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 32000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "zephyr-7b-beta",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+          "name": "zephyr-7b-alpha",
+          "type": "chat",
+          "cost_analysis": {
+            "cost_per_use": 4000,
+            "max_daily_uses": 375,
+            "calculation_method": "tokens*rate",
+            "original_pricing": {
+              "type": "per_token",
+              "credits": 1
+            }
+          },
+          "tokens": 4000,
+          "endpoints": [
+            "/v1/chat/completions"
+          ]
+        },
+        {
+
+      "name": "spark-desk-v1.5",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 6000,
+        "max_daily_uses": 250,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 8000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "solar-0-70b-16bit",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 3000,
+        "max_daily_uses": 500,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 4000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "llama-3.2-1b",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 96000,
+        "max_daily_uses": 15,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "pixtral-12b",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 24000,
+        "max_daily_uses": 62,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "mixtral-8x7b",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 24000,
+        "max_daily_uses": 62,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "mistral-7b-instruct",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 24000,
+        "max_daily_uses": 62,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "mythalion-13b",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 6000,
+        "max_daily_uses": 250,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 8000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "qwen-2-7b-instruct",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 24000,
+        "max_daily_uses": 62,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 32000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "qwen-2-vl-7b-instruct",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 3000,
+        "max_daily_uses": 500,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 4000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "llama-3.1-sonar-small-128k-chat",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 96000,
+        "max_daily_uses": 15,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "jamba-instruct",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 192000,
+        "max_daily_uses": 7,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 256000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "phi-3-mini-128k-instruct",
+      "type": "chat",
+      "cost_analysis": {
+        "cost_per_use": 96000,
+        "max_daily_uses": 15,
+        "calculation_method": "tokens*rate",
+        "original_pricing": {
+          "type": "per_token",
+          "credits": 0.75
+        }
+      },
+      "tokens": 128000,
+      "endpoints": [
+        "/v1/chat/completions"
+      ]
+    },
+    {
+      "name": "sdxl",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 100,
+        "max_daily_uses": 15000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 100
+        }
+      },
+      "tokens": 100,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "playground-v3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 1000,
+        "max_daily_uses": 1500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 1000
+        }
+      },
+      "tokens": 80,
+      "endpoints": [
+        "/v1/images/generations",
+        "/v1/images/edits"
+      ]
+    },
+    {
+      "name": "playground-v2.5",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 1000,
+        "max_daily_uses": 1500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 1000
+        }
+      },
+      "tokens": 80,
+      "endpoints": [
+        "/v1/images/generations",
+        "/v1/images/edits"
+      ]
+    },
+    {
+      "name": "kandinsky-3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 1000,
+        "max_daily_uses": 1500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 1000
+        }
+      },
+      "tokens": 100,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "stable-diffusion-3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 1000,
+        "max_daily_uses": 1500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 1000
+        }
+      },
+      "tokens": 500,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "stable-diffusion-3-2b",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 1000,
+        "max_daily_uses": 1500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 1000
+        }
+      },
+      "tokens": 80,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "sdxl-lightning",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 150,
+        "max_daily_uses": 10000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 150
+        }
+      },
+      "tokens": 80,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "sdxl-turbo",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 200,
+        "max_daily_uses": 7500,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 200
+        }
+      },
+      "tokens": 100,
+      "endpoints": [
+        "/v1/images/generations"
+      ]
+    },
+    {
+      "name": "animaginexl-3.1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 80,
+      "endpoints": [
+        "/v1/images/generations",
+        "/v1/images/edits"
+      ]
+    },
+    {
+      "name": "realvisxl-4.0",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 80,
+      "endpoints": [
+        "/v1/images/generations",
+        "/v1/images/edits"
+      ]
+    },
+    {
+      "name": "3guofeng3-v3.4",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "absolutereality-v1.6",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "absolutereality-v1.8.1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "am-i-real-v4.1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "analog-v1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "aniverse-v3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "anything-v3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "anything-v4.5",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "anything-v5",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "abyss-orange-mix-v3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "blazing-drive-v10g",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "breakdomain-i2428",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "breakdomain-m2150",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "cetus-mix-v3.5",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "childrens-stories-v1-3d",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "childrens-stories-v1-semi-real",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "childrens-stories-v1-toon-anime",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "counterfeit-v3.0",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "cuteyukimix-midchapter-3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "cyberrealistic-v3.3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "dalcefo-v4",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "deliberate-v2",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "deliberate-v3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "dreamlike-anime-v1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "dreamlike-diffusion-v1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "dreamlike-photoreal-v2",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "dreamshaper-6",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "dreamshaper-7",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "dreamshaper-8",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "edge-of-realism-eor-v2.0",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "eimis-anime-diffusion-v1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "elldreths-vivid-mix",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "epicphotogasm-x-plus-plus",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "epicrealism-natural-sin-rc1",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+      "name": "epicrealism-pure-evolution-v3",
+      "type": "image",
+      "cost_analysis": {
+        "cost_per_use": 300,
+        "max_daily_uses": 5000,
+        "calculation_method": "per_request",
+        "original_pricing": {
+          "type": "per_request",
+          "credits": 300
+        }
+      },
+      "tokens": 300,
+      "endpoints": [
+        "/nsfw/images/generations"
+      ]
+    },
+    {
+        "name": "indigo-furry-mix-v7.5-hybrid",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "juggernaut-aftermath",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "lofi-v4",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "lyriel-v1.6",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "majicmix-realistic-v4",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "mechamix-v1.0",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "meinamix-meina-v9",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "meinamix-meina-v11",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "neverending-dream-v1.22",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "pastel-mix",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "portrait-plus-v1",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "protogen-x3.4",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "realistic-vision-v1.4",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "realistic-vision-v2.0",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "realistic-vision-v4.0",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "realistic-vision-v5.0",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "realistic-vision-v5.1",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "rev-animated-v1.2.2",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "rundiffusion-fx-2.5d-v1.0",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "rundiffusion-fx-photorealistic-v1.0",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "stable-diffusion-v1.5",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "sd-v1-inpainting",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "shonin-beautiful-v1.0",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "theally-mix-ii",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "timeless-v1",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "toonyou-beta-6",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 300,
+          "max_daily_uses": 5000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 300
+          }
+        },
+        "tokens": 300,
+        "endpoints": [
+          "/nsfw/images/generations"
+        ]
+      },
+      {
+        "name": "deepseek-math-7b-instruct",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 2000,
+          "max_daily_uses": 750,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 4000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "deepseek-coder-6.7b-base-awq",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 4000,
+          "max_daily_uses": 375,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 8000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "deepseek-coder-6.7b-instruct-awq",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 4000,
+          "max_daily_uses": 375,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 8000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "qwen-1.5-0.5b-chat",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 16000,
+          "max_daily_uses": 93,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "qwen-1.5-1.8b-chat",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 16000,
+          "max_daily_uses": 93,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "qwen-1.5-14b-chat-awq",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 16000,
+          "max_daily_uses": 93,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "qwen-1.5-7b-chat-awq",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 16000,
+          "max_daily_uses": 93,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "phi-2",
+        "type": "chat",
+        "cost_analysis": {
+          "cost_per_use": 1024,
+          "max_daily_uses": 1464,
+          "calculation_method": "tokens*rate",
+          "original_pricing": {
+            "type": "per_token",
+            "credits": 0.5
+          }
+        },
+        "tokens": 2048,
+        "endpoints": [
+          "/v1/chat/completions"
+        ]
+      },
+      {
+        "name": "flux-schnell",
+        "type": "image",
+        "cost_analysis": {
+          "cost_per_use": 500,
+          "max_daily_uses": 3000,
+          "calculation_method": "per_request",
+          "original_pricing": {
+            "type": "per_request",
+            "credits": 500
+          }
+        },
+        "tokens": 32000,
+        "endpoints": [
+          "/v1/images/generations"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,391 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #280028; /* Dark purple */
+    color: #fff; /* White text for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure page takes up full viewport height */
+    max-width: 100vw; /* Prevent content from overflowing viewport width */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+header {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid #ff0000;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#header-text {
+    font-size: 2em;
+    color: silver;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Sections */
+section {
+    background-color: rgba(56, 0, 56, 0.5); /* Semi-transparent dark purple */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#project-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+     box-sizing: border-box;
+}
+
+/* Labels */
+label {
+    color: #00ff00;
+    font-size: 1em;
+    margin-bottom: 2px;
+    width: 120px;
+    text-align: right;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    background-color: #380038;
+    color: #fff;
+    border: 1px solid #00ff00;
+    padding: 5px;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+    resize: both;
+}
+
+textarea {
+    min-height: 40px;
+}
+
+#project-name,
+#main-goal {
+    min-height: 40px;
+}
+
+/* Subgoals section */
+.subgoals-section {
+  display: flex;
+    align-items: center;
+      width: 100%;
+     box-sizing: border-box;
+}
+
+#subgoalGrid {
+    display: flex; /* Change to flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 80px;
+    padding: 5px;
+    background-color: #000;
+      align-items: stretch;
+     margin-right: 5px;
+       width: 70%;
+
+}
+
+.subgoal-item {
+    background-color: #000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.9em;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+     flex: 0 0 auto;
+    height: 100%;
+    overflow-y: auto;
+
+}
+
+.subgoal-item.active {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.subgoal-item.completed {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #777;
+}
+/* Active Subgoal Area Styles */
+#activeSubgoal {
+    border: 1px solid #00ff00;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+        flex-direction: column;
+}
+
+#activeSubgoalDescription {
+     width: calc(50% - 12px);
+    margin-bottom: 2px;
+        flex-grow:1;
+}
+
+#activeSubgoal .timer-controls,
+#activeSubgoalDescription {
+    margin-bottom: 2px;
+}
+
+ /* AI Assistant Styles */
+ #ai-assistant {
+    flex: 1;
+    background-color: #3e053e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ai-assistant .chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#ai-assistant .chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#ai-assistant .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#ai-assistant .chat-messages {
+    flex: 1;
+    background-color: #4e064e;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+#ai-assistant .chat-input-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Model selection dropdown */
+#model-select {
+    padding: 0.5rem;
+    background-color: #4e064e;
+    color: #d5f7d5;
+    border: 1px solid #6e086e;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+       align-self: flex-end;
+
+}
+
+ #ai-assistant #chat-input {
+    flex: 1;
+    padding: 0.5rem;
+    background-color: #4e064e;
+    color: #d5f7d5;
+    border: 1px solid #6e086e;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    background-color: #00ff00;
+    color: #280028;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0 2px;
+}
+
+button:hover {
+    background-color: #ff0000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.remove-subgoal {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: relative;
+    left: 10px;
+}
+
+.remove-subgoal:hover {
+    background-color: #cc0000;
+}
+
+/* Project Select Dropdown */
+#project-select {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #380038;
+    color: #fff;
+    border: 1px solid #00ff00;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0 2px;
+}
+
+/* Countdown Timer */
+.timer-section {
+    margin-top: 10px;
+    border-top: 2px solid #ff0000;
+    padding-top: 10px;
+}
+
+#countdown-timer-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#custom-duration {
+    width: 70px;
+}
+
+#countdown-display {
+    font-size: 1.2em;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .project-inputs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-inputs label {
+        margin-bottom: 5px;
+          text-align: left;
+    }
+
+    .project-inputs textarea {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 95%;
+    }
+
+    .subgoals-section {
+        flex-direction: column;
+        align-items: flex-start;
+           width: 95%;
+        flex-wrap: wrap; /* Add this to allow subgoals to wrap */
+    }
+
+    .subgoal {
+         width: 95%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subgoal-description {
+        width: 95%; /* Adjust as needed */
+    }
+
+    .timer-controls {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #subgoals-container {
+        width: 95%;
+    }
+    .subgoal label{
+        width: 95%;
+    }
+    .timer-controls button {
+        margin: 2px;
+    }
+    .subgoal textarea.subgoal-description {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 95%; /* Adjust as needed */
+        min-height: 80px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 8px;
+        border: 1px solid #00ff00;
+        resize: vertical;
+    }
+    #subgoalGrid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on small screens */
+        gap: 3px;
+        width: 97%;
+           grid-auto-columns: 100px;
+    }
+
+    .subgoal-item {
+        padding: 5px;
+        font-size: smaller;
+    }
+
+    #activeSubgoal {
+        width: calc(97% - 35px);
+        margin-left: 2px;
+           flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 320px) {
+    #subgoalGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on very small screens */
+        gap: 2px;
+        width: 97%;
+    }
+
+    /* ... more specific adjustments for very small screens */
+}

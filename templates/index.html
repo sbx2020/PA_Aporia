@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aporia</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1 id="header-text">Aporia</h1>
+    </header>
+    <main>
+        <section id="project-form">
+            <div class="project-inputs">
+                <label for="project-name">Project Name:</label>
+                <textarea id="project-name" placeholder="Enter project name"></textarea>
+
+                <label for="main-goal">Main Goal:</label>
+                <textarea id="main-goal" placeholder="Enter main goal"></textarea>
+            </div>
+
+           <div class="subgoals-section">
+                <div id="subgoalGrid"></div>
+                <button id="add-subgoal">Add Subgoal</button>
+                <button id="save-project">Save Project</button>
+                   <select id="project-select">
+                     <option value="">Select Project</option>
+                   </select>
+                <button id="load-project">Load Project</button>
+                <button id="delete-project">Delete Project</button>
+            </div>
+
+            <div id="activeSubgoal">
+                <textarea id="activeSubgoalDescription" placeholder="Enter subgoal description"></textarea>
+                 <select id="model-select" aria-label="Select AI model">
+                            <option value="">Select Model</option>
+                </select>
+                 <div class="timer-controls">
+                    <button id="activeTimerStart">Start</button>
+                    <button id="activeTimerStop">Stop</button>
+                    <button id="activeTimerReset">Reset</button>
+                </div>
+                <span id="activeTimerDisplay">00:00:00</span>
+                <button id="activeSubgoalComplete">Complete</button>
+                <button id="activeSubgoalRemove">X</button>
+            </div>
+
+            <div class="timer-section">
+                <div id="countdown-timer-controls">
+                    <label for="countdown-duration">Countdown:</label>
+                    <select id="countdown-duration">
+                        <option value="300">5 min</option>
+                        <option value="900">15 min</option>
+                        <option value="1800">30 min</option>
+                        <option value="3600">1 hour</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input type="number" id="custom-duration" placeholder="Custom (sec)" style="display: none;">
+                    <button id="start-countdown">Start Countdown</button>
+                    <button id="stop-countdown">Stop Countdown</button>
+                    <span id="countdown-display">00:00:00</span>
+                </div>
+            </div>
+
+          <section id="ai-assistant" class="chat-window">
+            <div class="chat-area">
+                <div class="chat-container">
+
+                    <div id="chat-messages" class="chat-messages" role="log" aria-live="polite"></div>
+                    <div class="chat-input-container">
+                        <textarea
+                            id="chat-input"
+                            placeholder="Type your message..."
+                            aria-label="Chat message input"
+                        ></textarea>
+                        <button id="send-message" aria-label="Send message">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+    </main>
+     <audio id="timer-beep" src="{{ url_for('static', filename='pickupCoin.wav') }}" preload="auto"></audio>
+     <script src="{{ url_for('static', filename='js/model_manager.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
