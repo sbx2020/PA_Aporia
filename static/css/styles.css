@@ -219,3 +219,14 @@ button:hover {
     color: #fff;
     border: 1px solid #00ff00;
 }
+
+/* New CSS rule for #ai-select */
+#ai-select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #380038;
+    color: #fff;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+}

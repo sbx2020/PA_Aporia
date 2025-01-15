@@ -52,9 +52,9 @@
             <div class="ai-section">
                 <div class="model-selection">
                     <label>Select AI Model:</label>
-                    <select id="ai-model"></select>
+                    <select id="ai-select"></select>
                 </div>
-                <div class="chat-messages"></div>
+                <div class="chat-messages" id="chat-messages"></div>
                 <div class="chat-input">
                     <textarea id="user-input" placeholder="Ask for project management advice..."></textarea>
                     <button id="send-message">Send</button>
@@ -62,6 +62,7 @@
             </div>
         </div>
     </main>
+    <script src="{{ url_for('static', filename='js/model_manager.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

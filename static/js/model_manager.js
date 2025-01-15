@@ -1,18 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const modelSelect = document.getElementById('model-select');
+    const modelSelect = document.getElementById('ai-select');
+    if (!modelSelect) {
+        console.error('Model select element not found');
+        return;
+    }
     let currentModel = null;
+
+    const CONFIG = {
+        modelJsonpath: '/static/js/api_models.json'
+    }
 
     // Function to load models from local JSON file (updated path)
     async function loadModels() {
         try {
-            const response = await fetch('/static/js/electronjsoncombined_edit.json'); // Corrected path
+            const response = await fetch(CONFIG.modelJsonpath);
             if (!response.ok) {
-                throw new Error('Failed to load models');
+                throw new Error('Failed to load models: ${response.status} ${response.statusText}`);');
             }
             const data = await response.json();
             return data.models;
         } catch (error) {
-            console.error('Error loading models:', error);
+            console.error('Error loading models:', error.message);
             return [];
         }
     }

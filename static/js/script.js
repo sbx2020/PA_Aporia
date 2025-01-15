@@ -1,3 +1,4 @@
+
 // State Management
 const AppState = {
     subgoals: [],
@@ -278,4 +279,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initialize timer display
     updateTimerDisplay();
+
+});
+
+// Add event listener for the send message button
+document.getElementById("send-message").addEventListener("click", () => {
+    const userInput = document.getElementById("user-input").value.trim();
+    if (!userInput) {
+        alert("Please enter a message.");
+        return;
+    }
+
+    const currentModel = window.ModelManager.getCurrentModel();
+    if (!currentModel) {
+        alert("Please select an AI model.");
+        return;
+    }
+
+    // Display user message
+    const chatMessages = document.getElementById("chat-messages");
+    const userMessage = document.createElement("div");
+    userMessage.className = "user-message";
+    userMessage.textContent = userInput;
+    chatMessages.appendChild(userMessage);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    // Clear input field
+    document.getElementById("user-input").value = "";
+
+    // Simulate AI response (for demonstration purposes)
+    setTimeout(() => {
+        const assistantMessage = document.createElement("div");
+        assistantMessage.className = "assistant-message";
+        assistantMessage.textContent = "This is a simulated AI response.";
+        chatMessages.appendChild(assistantMessage);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }, 1000);
 });
